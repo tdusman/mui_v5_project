@@ -23,7 +23,7 @@ const RightBar = () => {
       }}
     >
       <Box position={"fixed"} width={380}>
-        <Typography variant="h6" color="initial" fontWeight={100}>
+        <Typography variant="h6" fontWeight={100}>
           Online Friends
         </Typography>
 
@@ -74,12 +74,7 @@ const RightBar = () => {
           />
         </AvatarGroup>
 
-        <Typography
-          variant="h6"
-          color="initial"
-          fontWeight={100}
-          margin={"10px 0"}
-        >
+        <Typography variant="h6" fontWeight={100} margin={"10px 0"}>
           Latest Photos
         </Typography>
 
@@ -122,7 +117,7 @@ const RightBar = () => {
           </ImageListItem>
         </ImageList>
 
-        <Typography variant="h6" color="initial" fontWeight={100} mt={2}>
+        <Typography variant="h6" fontWeight={100} mt={2}>
           Latest Conversations
         </Typography>
 

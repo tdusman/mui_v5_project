@@ -19,14 +19,13 @@ import {
 } from "@mui/material";
 import React from "react";
 
-const SideBar = () => {
+const SideBar = ({ mode, setMode }) => {
   return (
     <Box
       flex={1}
       p={2}
       sx={{
         display: { xs: "none", sm: "block" },
-        backgroundColor: "primary.light",
       }}
     >
       <Box position={"fixed"}>
@@ -95,12 +94,12 @@ const SideBar = () => {
           </ListItem>
 
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#profile">
-              <ListItemIcon>
-                <ModeNight />
-              </ListItemIcon>
-              <Switch />
-            </ListItemButton>
+            <ListItemIcon>
+              <ModeNight />
+            </ListItemIcon>
+            <Switch
+              onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+            />
           </ListItem>
         </List>
       </Box>
